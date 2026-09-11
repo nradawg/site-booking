@@ -1,0 +1,24 @@
+{
+  "site_name": "Glow Studio",
+  "tagline": "Your glow-up starts here.",
+  "owner_name": "Glow Studio",
+  "email": "hello@glowstudio.co",
+  "phone": "(415) 555-0234",
+  "address": "1234 Valencia St, San Francisco, CA 94110",
+  "hours": "Tue-Fri 10am-7pm | Sat 9am-5pm | Sun-Mon Closed",
+  "colors": {
+    "primary": "#1c1917",
+    "secondary": "#faf5ff",
+    "accent": "#a855f7"
+  },
+  "social": {
+    "instagram": "https://instagram.com/glowstudiosf",
+    "facebook": "https://facebook.com/glowstudiosf",
+    "twitter": "",
+    "linkedin": "",
+    "tiktok": "https://tiktok.com/@glowstudiosf"
+  },
+  "analytics_id": "",
+  "formspree_id": "xpznqwkl",
+  "custom_domain": ""
+}
