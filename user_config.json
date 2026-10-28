@@ -1,24 +1,51 @@
 {
   "site_name": "Glow Studio",
-  "tagline": "Your glow-up starts here.",
-  "owner_name": "Glow Studio",
-  "email": "hello@glowstudio.co",
+  "tagline": "Your glow up starts here.",
+  "description": "Facials and skincare treatments in San Francisco. Book online.",
+  "location_label": "San Francisco",
+  "intro": "Facials and skincare treatments in the Mission District, booked online in a minute.",
+  "email": "hello@example.com",
   "phone": "(415) 555-0234",
   "address": "1234 Valencia St, San Francisco, CA 94110",
-  "hours": "Tue-Fri 10am-7pm | Sat 9am-5pm | Sun-Mon Closed",
+  "hours": [
+    "Tue to Fri: 10am to 7pm",
+    "Sat: 9am to 5pm",
+    "Sun and Mon: Closed"
+  ],
   "colors": {
     "primary": "#1c1917",
     "secondary": "#faf5ff",
     "accent": "#a855f7"
   },
   "social": {
-    "instagram": "https://instagram.com/glowstudiosf",
-    "facebook": "https://facebook.com/glowstudiosf",
-    "twitter": "",
-    "linkedin": "",
-    "tiktok": "https://tiktok.com/@glowstudiosf"
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
   },
-  "analytics_id": "",
-  "formspree_id": "xpznqwkl",
-  "custom_domain": ""
+  "hero_image": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1600&q=80",
+  "booking_url": "",
+  "booking_note": "Please give 24 hours notice to cancel or reschedule.",
+  "services_intro": "Every treatment is matched to your skin and your goals.",
+  "services": [
+    { "category": "Facials", "name": "Signature Facial", "time": "60 min", "price": "$120", "description": "Deep cleansing, exfoliation, and hydration matched to your skin.", "featured": true },
+    { "category": "Facials", "name": "Express Glow", "time": "30 min", "price": "$65", "description": "Quick refresh with cleanse, exfoliation, and a hydrating serum.", "featured": false },
+    { "category": "Light Therapy", "name": "LED Light Therapy", "time": "30 min", "price": "$75", "description": "Red and blue LED light, on its own or added to a facial.", "featured": true },
+    { "category": "Peels", "name": "Chemical Peel", "time": "45 min", "price": "$150", "description": "A peel chosen for your skin type and goals.", "featured": true }
+  ],
+  "about": {
+    "headline": "Beauty, simplified.",
+    "story": [
+      "Say how you started in two or three plain sentences.",
+      "Then say the one thing you do that the studio down the street does not."
+    ],
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
+  },
+  "values": [
+    { "title": "Personal care", "description": "No one size fits all treatments. Each one is matched to you." },
+    { "title": "Straight answers", "description": "We tell you what a treatment can and cannot do before you book it." }
+  ],
+  "team": [],
+  "reviews": [],
+  "offers": [],
+  "formspree_id": ""
 }

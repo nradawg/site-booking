@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import config from "@/config";
 
 const links = [
   { href: "/", label: "Home" },
@@ -17,10 +18,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-purple-100 z-50">
+    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight">
-          Glow<span className="text-[#a855f7]">.</span>
+          {config.site_name}<span className="text-[var(--accent)]">.</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
@@ -30,7 +31,7 @@ export default function Navbar() {
               href={link.href}
               className={`text-sm font-medium transition-colors ${
                 pathname === link.href
-                  ? "text-[#a855f7]"
+                  ? "text-[var(--accent)]"
                   : "text-gray-500 hover:text-gray-900"
               }`}
             >
@@ -41,7 +42,7 @@ export default function Navbar() {
 
         <Link
           href="/book"
-          className="hidden md:inline-block bg-[#a855f7] hover:bg-[#9333ea] text-white px-5 py-2 rounded-full text-sm font-medium transition-colors"
+          className="hidden md:inline-block bg-[var(--accent)] hover:brightness-90 text-white px-5 py-2 rounded-full text-sm font-medium transition"
         >
           Book Appointment
         </Link>
@@ -62,14 +63,14 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-purple-100 bg-white px-6 py-4 space-y-3">
+        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-3">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
               className={`block text-sm font-medium ${
-                pathname === link.href ? "text-[#a855f7]" : "text-gray-500"
+                pathname === link.href ? "text-[var(--accent)]" : "text-gray-500"
               }`}
             >
               {link.label}
